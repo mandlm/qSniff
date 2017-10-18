@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "sniffthread.h"
+#include <QTime>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -22,5 +23,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::dataReceived(QString data)
 {
-	ui->listWidget->addItem(data);
+	QTime currentTime = QTime::currentTime();
+
+	ui->listWidget->addItem(currentTime.toString(Qt::ISODate) + ": " + data);
 }
