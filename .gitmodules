@@ -1,3 +1,3 @@
-[submodule "source/rc-switch"]
-	path = source/rc-switch
+[submodule "source/RCSwitch/rc-switch"]
+	path = source/RCSwitch/rc-switch
 	url = git@github.com:sui77/rc-switch.git

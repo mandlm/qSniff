@@ -9,11 +9,6 @@ set(CMAKE_AUTOUIC ON)
 
 add_definitions(-DRPI)
 
-add_library(rc-switch 
-	rc-switch/RCSwitch.cpp
-	rc-switch/RCSwitch.h
-)
-
 add_executable(qSniff
     qsniff.cpp
     mainwindow.cpp
@@ -34,4 +29,6 @@ add_executable(Sniff
 )
 
 target_link_libraries(Sniff rc-switch wiringPi)
+
+add_subdirectory(RCSwitch)
 
