@@ -16,19 +16,25 @@ add_executable(qSniff
     mainwindow.ui
 	sniffthread.cpp
 	sniffthread.h
-	sniffer.cpp
-	sniffer.h
 )
 
-target_link_libraries(qSniff rc-switch wiringPi Qt5::Widgets)
+target_link_libraries(qSniff 
+	sniffer 
+	rc-switch 
+	wiringPi 
+	Qt5::Widgets
+)
 
 add_executable(Sniff
 	sniff.cpp
-	sniffer.cpp
-	sniffer.h
 )
 
-target_link_libraries(Sniff rc-switch wiringPi)
+target_link_libraries(Sniff 
+	sniffer 
+	rc-switch 
+	wiringPi
+)
 
 add_subdirectory(RCSwitch)
+add_subdirectory(sniffer)
 
