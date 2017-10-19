@@ -1,13 +1,13 @@
-project(Sniff)
+project(Send)
 cmake_minimum_required(VERSION 3.6)
 
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(${PROJECT_NAME}
-	sniff.cpp
+	send.cpp
 )
 
 target_link_libraries(${PROJECT_NAME} 
-	sniffer 
+	sender
 )
 

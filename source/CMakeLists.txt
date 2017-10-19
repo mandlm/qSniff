@@ -4,4 +4,6 @@ add_subdirectory(RCSwitch)
 add_subdirectory(sniffer)
 add_subdirectory(qsniff)
 add_subdirectory(sniff)
+add_subdirectory(sender)
+add_subdirectory(send)
 
