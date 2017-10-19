@@ -7,13 +7,15 @@ int main(int argc, char **argv)
 
 	Sender sender(27);
 
+	unsigned int data = 1;
+
+
 	while (true)
 	{
-		unsigned int data = 23;
 
 		std::cout << "Sending: " << data << std::endl;
 
-		sender.send(data);
+		sender.send(data++);
 
 		delay(1000);
 	}
