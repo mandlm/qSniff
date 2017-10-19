@@ -1,6 +1,6 @@
 #pragma once
 
-#include "rc-switch/RCSwitch.h"
+#include "RCSwitch.h"
 
 class Sniffer
 {
