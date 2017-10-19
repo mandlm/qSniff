@@ -1,0 +1,13 @@
+project(Sniff)
+cmake_minimum_required(VERSION 3.6)
+
+add_executable(${PROJECT_NAME}
+	sniff.cpp
+)
+
+target_link_libraries(${PROJECT_NAME} 
+	sniffer 
+	rc-switch 
+	wiringPi
+)
+

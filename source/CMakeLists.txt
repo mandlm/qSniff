@@ -4,17 +4,8 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_definitions(-DRPI)
 
-add_executable(Sniff
-	sniff.cpp
-)
-
-target_link_libraries(Sniff 
-	sniffer 
-	rc-switch 
-	wiringPi
-)
-
 add_subdirectory(RCSwitch)
 add_subdirectory(sniffer)
 add_subdirectory(qsniff)
+add_subdirectory(sniff)
 
